@@ -11,22 +11,22 @@ size check should be implemented before writing in the code.
 
 
 <p>
-// Create a new file upload handler
+/* Create a new file upload handler*/
 ServletFileUpload upload = new ServletFileUpload();
 upload.setHeaderEncoding("UTF-8");
 
-// Parse the request
+/* Parse the request*/
 FileItemIterator iter = upload.getItemIterator(request);
 while (iter.hasNext()) 
 {
     FileItemStream item = iter.next();
     String name = item.getFieldName();
 
-    //InputStream attachmentStream = item.openStream();
-    //byte[] attachmentBytes = ByteStreams.toByteArray(attachmentStream);
+    /*InputStream attachmentStream = item.openStream();
+    /byte[] attachmentBytes = ByteStreams.toByteArray(attachmentStream);*/
 
 
-    //InputStream stream = item.getInputStream();
+    /*InputStream stream = item.getInputStream();*/
     InputStream stream = item.openStream();
 
     if (item.isFormField()) 
