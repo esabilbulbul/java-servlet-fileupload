@@ -13,7 +13,7 @@ size check should be implemented before writing in the code.
 
 # Code Block : doRequest
 
-
+```
 // Create a new file upload handler
 
 ServletFileUpload upload = new ServletFileUpload();
@@ -58,4 +58,4 @@ while (iter.hasNext())
         bin.close();
     }        
 }
-
+```
