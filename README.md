@@ -10,9 +10,10 @@ The problem underlying is not to check the data received as we have no guarantee
 size check should be implemented before writing in the code.
 
 
-<p>
+
 #Code Block    
-    
+
+<p>
 // Create a new file upload handler
 ServletFileUpload upload = new ServletFileUpload();
 upload.setHeaderEncoding("UTF-8");
