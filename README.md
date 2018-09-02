@@ -11,9 +11,9 @@ size check should be implemented before writing in the code.
 
 
 
-#Code Block    
+# Code Block : doRequest
 
-<p>
+
 // Create a new file upload handler
 ServletFileUpload upload = new ServletFileUpload();
 upload.setHeaderEncoding("UTF-8");
@@ -56,4 +56,4 @@ while (iter.hasNext())
         bin.close();
     }        
 }
-</p>
+
