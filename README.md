@@ -12,11 +12,11 @@ size check should be implemented before writing in the code.
 
 <p>
     
-# Create a new file upload handler
+-- Create a new file upload handler
 ServletFileUpload upload = new ServletFileUpload();
 upload.setHeaderEncoding("UTF-8");
 
-# Parse the request
+-- Parse the request
 FileItemIterator iter = upload.getItemIterator(request);
 while (iter.hasNext()) 
 {
